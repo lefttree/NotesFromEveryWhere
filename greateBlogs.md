@@ -1,4 +1,4 @@
 ###Web
 
-    - [sahatyalkabov](http://sahatyalkabov.com/)
-        a lot great projects
+- [sahatyalkabov](http://sahatyalkabov.com/)
+    a lot great projects
