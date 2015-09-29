@@ -9,6 +9,10 @@
     - [Problem Solving with Algorithms and Data Structure](http://interactivepython.org/runestone/static/pythonds/index.html)
     - [Python Guide](http://docs.python-guide.org/en/latest/)
 
+##Interesting Projects
+    - [python with NBA](http://savvastjortjoglou.com/archives.html)
+
 #Tutorial
     
     - [liaoxuefeng's 教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+
