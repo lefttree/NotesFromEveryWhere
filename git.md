@@ -3,6 +3,7 @@
 ##Blogs
 
 - [reset, checkout, revert的区别](http://segmentfault.com/a/1190000003102737)
+- [remove sensitive data from github](https://help.github.com/articles/remove-sensitive-data/)
 
 #Tutorial
 
