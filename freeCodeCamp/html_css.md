@@ -16,3 +16,7 @@ An element's margin controls the amount of space **between an element's border a
 - id styles override class styles
 - in-line styles override all
 - `!important` overrides all, `color: pink !important;`
+
+## Responsive Design with Bootstrap
+
+
