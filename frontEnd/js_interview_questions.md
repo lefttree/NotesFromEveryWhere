@@ -290,3 +290,29 @@ is actually
      console.log("My New Salary " + salary);
  })();
 ```
+
+### typeof
+
+```javascript
+function func(x) {
+    console.log(typeof x, arguments.length);
+}
+```
+
+### Cookie
+
+read a cookie
+
+`document.cookie`
+
+create a cookie
+
+```javascript
+document.cookie = "key1 = value1; key2 = value2; expires = date";
+```
+
+delete a cookie
+
+just set the expiration date to a time in the past
+
+### 
