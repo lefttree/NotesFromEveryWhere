@@ -238,3 +238,184 @@ if an element is taller than the element containing it, and it's floated, it wil
 overflow outside of its container.
 
 add `overflow: auto` to the container element
+
+## inline-block
+
+are like inline elements but they can have a width and height. can achieve the 
+same effect as float + clear
+
+## Layout - Horizontal Align
+
+### Center Align - using margin
+
+- setting the width of a block-level element will prevent it from stretching out
+to the edges of its container
+- use `margin:auto;` to horizontally center an element within its container
+
+```css
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #72AD21;
+    padding: 10px;
+}
+```
+
+### left and right align
+
+1. using position
+
+```
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+```
+
+>Absolute positioned elements are removed from the normal flow, and can overlap
+elements
+
+Tip: when aligin elements with `position`, always define `margin` and `padding`
+for the `<body>` element. This is to avoid visual differences in different browsers.
+
+2. using float
+
+```css
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+```
+
+also always define `margin` and `padding` for `<body>`
+
+## Combinators (selectors)
+
+There are 4 different combinators in CSS3:
+
+- descendant selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
+
+### Descendant Selector
+
+It matches all elements that are descendants of a specified element.
+
+The following example selects all `<p>` elements **inside** `<div>` elements
+
+```css
+div p {
+
+}
+```
+
+### Child Selector
+
+selects all elements that are the **immediate children** of a specified element.
+
+### adjacent sibling selector
+
+djacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+
+Sibling elements must have the **same parent element**, and "adjacent" means **immediately following**.
+
+```css
+div + p {
+}
+```
+
+### general sibling selector
+
+It selects all elements that are siblings of a specified element.
+
+```css
+div ~ p {
+}
+```
+
+## Pseudo-Classes
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+- style an element when a user mouses over it
+- style visited and unvisited links differently
+- style an element when it gets focus
+
+### syntax
+
+```css
+selector:pseudo-class {
+    property:value
+}
+```
+
+### link
+
+- `a:link`
+- `a:visited`
+- `a:hover`
+- `a:active`
+
+>Note: `a:hover` MUST come after `a:link` and `a:visited` in the CSS definition
+in order to be effective! `a:active` MUST come after `a:hover` in the CSS
+definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+### :first-child
+
+It matches a specified element that **is the first child** of another element.
+
+matches any <p> element that is the first child of any element
+
+```css
+p:first-child {
+    color: blue;
+}
+```
+
+following example matchs the first `<i>` in all `<p>`
+
+```css
+p i:first-child {
+    color: blue;
+}
+```
+
+### :lang
+
+The :lang pseudo-class allows you to define special rules for different languages.
+
+### :focus
+
+more are in the [w3c link](http://www.w3schools.com/css/css_pseudo_classes.asp)
+
+## Pseudo-Elements
+
+### syntax
+
+2 ::
+
+```css
+selector::pseudo-element{
+}
+```
+
+### all 
+
+- `::after`
+- `::before`
+- `::first-letter`
+- `::first-line`
+- `::selection`
