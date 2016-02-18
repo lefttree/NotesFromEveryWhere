@@ -189,3 +189,52 @@ always start on a new line and takes up the full width available
 ### inline elements
 
 only takes up as much width as necessary
+
+## position
+
+elements are positioned using the top, bottom, left and right properties.
+
+- static(default)
+
+static positioned element are not affected by the top, bottom, left, right preperties.
+
+- relative
+
+positioned relative to its normal position
+
+- fixed
+
+positioned relative to the viewport, which means it **always** stays in the same
+place even if the page is scrolled.
+
+It does not leave a gap in the page where it would normally have been located.
+
+- absolute
+
+positioned relative to the nearest positioned ancestor(an element whose position is
+anything except `static`).
+
+- z-index
+
+- clip
+
+- cursor
+
+can change the cursor
+
+## float
+
+- float
+
+- clear
+
+clear property is used to control the behavior of floating elements. the elements
+after a floating element will flow aroudn it. use `clear` to avoid it, specifies
+on which side elements are **not** allowed to float.
+
+- the clearfix hack - `overflow:auto`
+
+if an element is taller than the element containing it, and it's floated, it will
+overflow outside of its container.
+
+add `overflow: auto` to the container element
