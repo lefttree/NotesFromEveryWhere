@@ -75,6 +75,8 @@ but still fast enough to not cause a noticeable delay for the user.
 Use a standard algorithm like [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) or
 [bcrypt](http://en.wikipedia.org/wiki/Bcrypt).
 
+如果是在web应用中使用key扩展hash函数，需要考虑可能有大量的计算资源用来处理用户认证请求。攻击者可能通过这种方式来进行拒绝服务攻击。不过我依然推荐使用key扩展hash函数，只是迭代次数设置的小一点。这个次数需要根据自己服务器的计算能力和预计每秒需要处理的认证请求次数来设置。
+
 ### Impossible-to-crack Hashes: Keyed Hashes and Password Hashing Hardware
 
 ## History
@@ -90,6 +92,7 @@ Use a standard algorithm like [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) or
 
 - [如何安全地存储密码](chrome-extension://klbibkeccnjlkjkiokjodocebajanakg/suspended.html#uri=http://blog.jianguoyun.com/?p=438)
 - [hashing-security](https://crackstation.net/hashing-security.htm)
+- [乌云翻译crask station](http://drops.wooyun.org/papers/1066?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 - [hash, salt及更多](http://www.oschina.net/question/28_57478?fromerr=VIo1n1ny)
 - [加盐密码hash，如何正确使用](http://blog.jobbole.com/61872/)
 - [各种语言的方案](http://www.freebuf.com/articles/web/96473.html)
