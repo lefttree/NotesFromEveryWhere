@@ -1,6 +1,13 @@
-#
+# JS Questions
 
-## Difference between call and apply
+## Hoisting
+
+`Function declarations` and `function variables` are always moved (‘hoisted’) to
+the top of `their JavaScript scope` by the JavaScript interpreter
+
+variable `declarations` get hoisted but their `assignment` expression **don't**.
+
+## Difference between call, apply and bind
 
 Both call and apply perform very similar functions: they execute a function in the context, or scope, of the first argument that you pass to them.
 
@@ -24,3 +31,14 @@ the second argument **needs to be an array**, then it will unpacks as arguments.
 ### `bind()`
 
 `bind()` creates a new function that, when called, has its `this` keyword
+
+
+
+## References
+
+- [front-end interview question github](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+- [Javascript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+- [Frontend Handbook](http://www.frontendhandbook.com/practice/interview-q.html)
+
+- [alex frontend interview questions](http://blog.sourcing.io/interview-questions)
+- [Function declaration vs expression](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
