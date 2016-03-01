@@ -1,5 +1,16 @@
 # JS Questions
 
+## References
+
+- [front-end interview question github](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+- [Javascript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+- [Frontend Handbook](http://www.frontendhandbook.com/practice/interview-q.html)
+- [that js dude](http://thatjsdude.com/interview/index.html)
+
+- [alex frontend interview questions](http://blog.sourcing.io/interview-questions)
+- [Function declaration vs expression](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
+
+    
 ## Hoisting
 
 `Function declarations` and `function variables` are always moved (‘hoisted’) to
@@ -34,11 +45,4 @@ the second argument **needs to be an array**, then it will unpacks as arguments.
 
 
 
-## References
 
-- [front-end interview question github](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
-- [Javascript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
-- [Frontend Handbook](http://www.frontendhandbook.com/practice/interview-q.html)
-
-- [alex frontend interview questions](http://blog.sourcing.io/interview-questions)
-- [Function declaration vs expression](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
